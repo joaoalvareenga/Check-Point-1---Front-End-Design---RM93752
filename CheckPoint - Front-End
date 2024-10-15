@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music for Everyone</title>
+    <style>
+        body {
+            font-family: Open Sans, sans-serif;
+            margin: 4;
+            padding: 4;
+            background-color: black;
+            color: rgb(202, 178, 211);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle at center, rgb(44, 6, 44) 0%, black 70%);
+        }
+    
+
+p {
+    font-size: 1em;
+    width: 80%;
+    margin-bottom: 5px;
+    line-height: 1.4em;
+}
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgb(58, 7, 58);
+        }
+
+        .content {
+            margin-right: 20px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 6em;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Aqui coloquei o botão de download em vermelho */
+        .Download {
+            background-color: rgb(151, 22, 22);
+            color: white;
+        }
+
+        /* Aqui coloquei o botão Teste Gratuito em verde */
+        .Teste Grátis {
+            background-color: rgb(4, 67, 4);
+            color: white;
+        }
+
+        .singer-photo img {
+            max-width: 400px;
+            border-radius: 15px;
+        }
+footer {
+    background-color: #0d0116;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Music for everyone.</h1>
+            <p>
+                A música é como aquele amigo que está sempre presente, nos momentos bons e ruins. Ela tem o poder de transformar nosso humor, de nos fazer viajar sem sair do lugar. Sabe aquele dia pesado que só melhora com uma playlist favorita? Ele acaba hoje.
+            </p>        
+            <div class="buttons">
+                <button class="download" onclick="downloadMusic()">Download Music</button>
+                <button class="free-test" onclick="testMusic()">Free Test</button>
+            </div>
+        </div>
+        <div class="singer-photo">
+            <img src="https://abrir.link/ACeRz" alt="Singer Photo">
+        </div>
+    </div>
+    <script>
+        function downloadMusic() {
+            window.location.href = '/mnt/data/Post Malone - Circles (Official Music Video).mp3';
+        }
+        function testMusic() {
+            alert('Teste gratuito da música iniciado!');
+        }
+    </script>
+     </div>
+     <!-- Aqui os footers que o senhor pediu -->
+        <footer>
+            <a href="#">Home</a>
+            <a href="#">Em alta</a>
+            <a href="#">Meus Artistas</a>
+            <a href="#">Conta</a>
+        </footer>
+</body>
+</html>
+
+</body>
+
+</html>
